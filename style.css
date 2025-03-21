@@ -187,9 +187,11 @@ body {
 .suporte__ul{
     margin-top: 2em;
     list-style: none;
+    gap: 1em;
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
 }
 
 .suporte__ul li::marker{
@@ -200,6 +202,7 @@ body {
     background-color: #1a1a2e;
     padding: 30px;
     border-radius: 8px;
+    min-width: 300px;
 }
 
 /* Seção Feedback */
@@ -242,6 +245,7 @@ body {
 
     .banner p {
         font-size: 1em;
+        margin: 0 0.2em;
     }
 
     .imagem-projeto img {
@@ -250,6 +254,19 @@ body {
 
     .botao-visualizar {
         padding: 15px 30px;
-        max-width: 300px;
+    }
+
+    .suporte__ul{
+        justify-content: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .botao-visualizar{
+        padding: 8px;
+    }
+
+    .botao-visualizar a{
+        font-size: 1em;
     }
 }
