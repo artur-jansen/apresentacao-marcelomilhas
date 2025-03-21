@@ -60,7 +60,7 @@ body {
 /* Botão de Visualização */
 .botao-visualizar {
     display: block;
-    background-color: #00ff88;
+    background-color: #5ED1D0;
     color: #0f0f1f;
     text-decoration: none;
     border-radius: 8px;
@@ -123,7 +123,7 @@ body {
 }
 
 .processo h2 {
-    color: #00ff88;
+    color: #5ED1D0;
     margin-bottom: 20px;
     font-weight: 700;
     font-size: 2em;
@@ -136,7 +136,7 @@ body {
 }
 
 .strong__verde{
-    color: #00ff88;
+    color: #5ED1D0;
     font-size: 1.2em;
 }
 
@@ -149,7 +149,7 @@ body {
 }
 
 .pagamento h3 {
-    color: #00ff88;
+    color: #5ED1D0;
     margin-bottom: 20px;
     font-weight: 700;
     font-size: 2em;
@@ -161,7 +161,7 @@ body {
 }
 
 .pagamento__numero{
-    color: #00ff88;
+    color: #5ED1D0;
 }
 
 /* Seção Suporte */
@@ -172,7 +172,7 @@ body {
 }
 
 .suporte h3 {
-    color: #00ff88;
+    color: #5ED1D0;
     margin-bottom: 20px;
     font-weight: 700;
     font-size: 2em;
@@ -212,7 +212,7 @@ body {
 }
 
 .feedback h3 {
-    color: #00ff88;
+    color: #5ED1D0;
     margin-bottom: 20px;
     font-weight: 700;
     font-size: 2em;
@@ -229,7 +229,7 @@ body {
 }
 
 .strong__verde-star{
-    color: #00ff88;
+    color: #5ED1D0;
     font-size: 2em;
 }
 
