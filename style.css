@@ -1,0 +1,255 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+/* Reset e Configurações Gerais */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+body {
+    background-color: #0f0f1f;
+    color: #ffffff;
+    line-height: 1.6;
+}
+
+/* Container Principal */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 20px;
+}
+
+/* Seção Banner */
+.banner {
+    text-align: center;
+    padding: 80px 0;
+    background: linear-gradient(135deg, #1a1a2e, #16213e);
+    margin-bottom: 40px;
+    border-radius: 12px;
+}
+
+.banner h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+
+.banner p {
+    font-size: 1.2em;
+    color: #8f8f8f;
+}
+
+/* Seção Imagem do Projeto */
+.imagem-projeto {
+    text-align: center;
+    margin: 40px 0;
+}
+
+.imagem-projeto img {
+    max-width: 800px;
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+    display: block;
+    margin: 0 auto;
+}
+
+/* Botão de Visualização */
+.botao-visualizar {
+    display: block;
+    background-color: #00ff88;
+    color: #0f0f1f;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    margin: 40px auto;
+    padding: 12px;
+    text-align: center;
+    max-width: 600px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    position: relative;
+}
+
+.botao-visualizar:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.botao-visualizar::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 0;
+    height: 0;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    transition: all 0.3s ease;
+}
+
+.botao-visualizar:hover::after {
+    width: 300px;
+    height: 300px;
+    opacity: 0;
+}
+
+.botao-visualizar:active {
+    transform: translateY(0);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.botao-visualizar:active::after {
+    opacity: 1;
+    width: 0;
+    height: 0;
+}
+
+.botao-visualizar a{
+    margin: 0 !important;
+    font-size: 1.2em;
+}
+
+/* Seção Processo de Entrega */
+.processo {
+    text-align: center;
+    padding: 40px 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.processo h2 {
+    color: #00ff88;
+    margin-bottom: 20px;
+    font-weight: 700;
+    font-size: 2em;
+}
+
+.processo p {
+    color: #8f8f8f;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.strong__verde{
+    color: #00ff88;
+    font-size: 1.2em;
+}
+
+/* Seção Pagamento */
+.pagamento {
+    background-color: #1a1a2e;
+    padding: 30px;
+    border-radius: 8px;
+    margin: 40px 0;
+}
+
+.pagamento h3 {
+    color: #00ff88;
+    margin-bottom: 20px;
+    font-weight: 700;
+    font-size: 2em;
+}
+
+.pagamento p {
+    color: #8f8f8f;
+    line-height: 1.6;
+}
+
+.pagamento__numero{
+    color: #00ff88;
+}
+
+/* Seção Suporte */
+.suporte {
+    text-align: center;
+    padding: 40px 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.suporte h3 {
+    color: #00ff88;
+    margin-bottom: 20px;
+    font-weight: 700;
+    font-size: 2em;
+}
+
+.suporte p {
+    color: #8f8f8f;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.suporte__ul{
+    margin-top: 2em;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.suporte__ul li::marker{
+    display: none;
+}
+
+.suporte__ul li{
+    background-color: #1a1a2e;
+    padding: 30px;
+    border-radius: 8px;
+}
+
+/* Seção Feedback */
+.feedback {
+    text-align: center;
+    padding: 40px 0;
+}
+
+.feedback h3 {
+    color: #00ff88;
+    margin-bottom: 20px;
+    font-weight: 700;
+    font-size: 2em;
+}
+
+.feedback p {
+    color: #8f8f8f;
+    max-width: 800px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5em;
+}
+
+.strong__verde-star{
+    color: #00ff88;
+    font-size: 2em;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .container {
+        padding: 20px;
+    }
+
+    .banner h1 {
+        font-size: 2em;
+    }
+
+    .banner p {
+        font-size: 1em;
+    }
+
+    .imagem-projeto img {
+        max-width: 100%;
+    }
+
+    .botao-visualizar {
+        padding: 15px 30px;
+        max-width: 300px;
+    }
+}
